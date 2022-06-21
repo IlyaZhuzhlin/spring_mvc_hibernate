@@ -1,6 +1,6 @@
 package com.ilyazhuzhlin.spring.mvc_hibernate.entity.service;
 
-import com.ilyazhuzhlin.spring.mvc_hibernate.entity.User;
+import com.ilyazhuzhlin.spring.mvc_hibernate.entity.model.User;
 import com.ilyazhuzhlin.spring.mvc_hibernate.entity.dao.UserDAO;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
@@ -37,5 +37,11 @@ public class UserServiceImpl implements UserService {
     @Transactional
     public void deleteUser(int id) {
         userDAO.deleteUser(id);
+    }
+
+    @Override
+    @Transactional
+    public void updateUser(User user, int id) {
+        userDAO.updateUser(user,id);
     }
 }

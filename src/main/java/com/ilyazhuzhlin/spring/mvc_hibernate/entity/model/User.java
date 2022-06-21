@@ -1,5 +1,4 @@
-package com.ilyazhuzhlin.spring.mvc_hibernate.entity;
-
+package com.ilyazhuzhlin.spring.mvc_hibernate.entity.model;
 import javax.persistence.*;
 
 @Entity
